@@ -1,0 +1,40 @@
+# Develop the following app
+# Computer picks a random number
+# The user needs to provide feedback
+# The computer needs to provide feedback
+# The game goes until the user has the correct guess
+# finally, the machine prints out the number of guesses
+
+# import random
+# pick_number = random.randint(1, 101)
+# x = int(input("Enter your guess: "))
+# guesses = 0
+# while pick_number != x:
+#     if pick_number > x:
+#         print "increase the value of your guess " + str(pick_number)
+#         pick_number = random.randint(1, 101)
+#     if x > pick_number:
+#         print "decrease the value of your guess " + str(pick_number)
+#     x = int(input("Enter your guess: "))
+#     guesses += 1
+# print "Sucessfully: " + str(guesses)
+
+x = int(input("Enter your guess 1: "))
+y = int(input("Enter your guess 2: "))
+z = int(input("Enter your guess 3: "))
+
+if x <= y <= z:
+    print "number max: " + str(z)
+elif x <= y and y >= z:
+    print "number max: " + str(y)
+# elif x > y > z:
+#     print "number max: "+str(x)
+else:
+    print "number max: " + str(x)
+
+if x**2 == (y**2 + z**2) or y**2 == (x**2 + z**2) or z**2 == (y**2 + x**2):
+    print "triangle"
+else:
+
+    print "not"
+# Develop the code  that takes in three intergers and prints out if they the belong to a right triangle
