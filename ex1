@@ -1,0 +1,22 @@
+input_number=int(input("Enter your number: "))
+if input_number<2:
+    print ('This is not prime number')
+elif input_number == 2:
+    print (str(input_number))
+else:
+    n = 2
+    isprime = 0
+    while n<=input_number:
+        if n==2:
+            print(str(n))
+        else:
+            for i in range(2,n):
+                if n%i==0:
+                    isprime=0
+                    break
+                isprime=1
+        if isprime==1:
+            print(str(n))
+        n+=1
+    
+
