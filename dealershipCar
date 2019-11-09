@@ -80,3 +80,18 @@ totalcount=DealershipCar.totalsalecar(list_car)
 DealershipCar.display(totalyear)
 DealershipCar.display_special(totalcount)
 
+class collection(DealershipCar):
+    def __init__(self):
+        self.collection = []
+
+    def addCar(self):
+        self.collection.append(DealershipCar)
+    def removeCar(self):
+        self.collection.remove(DealershipCar)
+    def modifyCar(self,index,):
+        self.collection.
+class main:
+    saleyear()
+    benefityear()
+    soldmake()
+    purchase()
