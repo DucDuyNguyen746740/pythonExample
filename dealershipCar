@@ -60,3 +60,23 @@ class DealershipCar:
         print("Total price for sale: " + str(totals))
     def display_special(count):
         print("Total special for sale: " + str(count))
+        
+  """"""
+  from dealershipCar import DealershipCar
+
+list_car = []
+
+dealer1 = DealershipCar('test1', '1ty', '1000', '1300', '6-3-411', '2-3-100')
+dealer2 = DealershipCar('test2', '2ty', '10000', '1400', '6-3-411', '2-3-100')
+dealer3 = DealershipCar('test2', '2ty', '15000', '1400', '6-3-411', '2-3-100')
+list_car.append(dealer1)
+list_car.append(dealer2)
+list_car.append(dealer3)
+"""for i in list_car:
+    total = total + int(i.get_purchase_price())
+"""
+totalyear=DealershipCar.totalyear(list_car)
+totalcount=DealershipCar.totalsalecar(list_car)
+DealershipCar.display(totalyear)
+DealershipCar.display_special(totalcount)
+
