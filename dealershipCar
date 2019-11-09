@@ -92,6 +92,6 @@ class collection(DealershipCar):
         self.collection.
 class main:
     saleyear()
-    benefityear()
-    soldmake()
-    purchase()
+    benefityear(year)
+    soldmake(make)
+    purchase(make)
